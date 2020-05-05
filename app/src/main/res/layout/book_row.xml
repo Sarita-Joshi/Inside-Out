@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/book_card"
+    android:elevation="10dp"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:background="#20A412"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/delete_icon"
+            android:text="Delete"
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="15dp"
+            android:src="@drawable/ic_delete" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fefefe">
+
+    <LinearLayout
+                android:id="@+id/ll_book_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:background="#FCF4E9"
+                >
+
+                <TextView
+                    android:id="@+id/textView_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notebook Title"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:layout_margin="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Owner name"
+                    android:textColor="#000"
+                    android:layout_margin="3dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
